@@ -153,6 +153,7 @@ const about: About = {
   title: "Technical Skills",
   skills: [
     {
+      title: "Backend Development",
       tags: [
         { name: "Python", icon: "python" },
         { name: "Django", icon: "django" },
@@ -161,6 +162,7 @@ const about: About = {
       ],
     },
     {
+      title: "Frontend Development",
       tags: [
         { name: "JavaScript", icon: "javascript" },
         { name: "React", icon: "react" },
@@ -170,6 +172,7 @@ const about: About = {
       ],
     },
     {
+      title: "Databases & DevOps",
       tags: [
         { name: "PostgreSQL", icon: "postgresql" },
         { name: "MongoDB", icon: "mongodb" },
