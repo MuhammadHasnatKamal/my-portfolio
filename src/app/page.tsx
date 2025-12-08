@@ -125,7 +125,7 @@ export default function Home() {
           </Row>
         </Column>
       )} */}
-      <Projects range={[5]} />
+      <Projects range={[6]} />
 
        <Button
               id="work"
