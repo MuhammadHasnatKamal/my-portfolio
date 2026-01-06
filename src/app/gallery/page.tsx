@@ -1,34 +1,42 @@
 import { Flex, Meta, Schema } from "@once-ui-system/core";
-import GalleryView from "@/components/gallery/GalleryView";
+import ServicesView from "@/components/gallery/GalleryView";
 import { baseURL, gallery, person } from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
-    title: gallery.title,
-    description: gallery.description,
+    title: "Services & Pricing",
+    description: "Professional LinkedIn optimization and e-commerce branding services with competitive pricing. Get started with our tailored packages.",
     baseURL: baseURL,
-    image: `/api/og/generate?title=${encodeURIComponent(gallery.title)}`,
+    image: `/api/og/generate?title=${encodeURIComponent("Services & Pricing")}`,
     path: gallery.path,
   });
 }
 
-export default function Gallery() {
+export default function Services() {
   return (
-    <Flex maxWidth="l">
+    <Flex 
+      maxWidth="xxl" 
+      paddingX={{ default: "l", m: "xl" }}
+      horizontal="center"
+      style={{ 
+        width: '100%',
+        justifyContent: 'center'
+      }}
+    >
       <Schema
         as="webPage"
         baseURL={baseURL}
-        title={gallery.title}
-        description={gallery.description}
+        title="Services & Pricing"
+        description="Professional LinkedIn optimization and e-commerce branding services with competitive pricing"
         path={gallery.path}
-        image={`/api/og/generate?title=${encodeURIComponent(gallery.title)}`}
+        image={`/api/og/generate?title=${encodeURIComponent("Services & Pricing")}`}
         author={{
           name: person.name,
           url: `${baseURL}${gallery.path}`,
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <GalleryView />
+      <ServicesView />
     </Flex>
   );
 }

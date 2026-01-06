@@ -11,10 +11,9 @@ import {
   Meta,
   Line,
 } from "@once-ui-system/core";
-import { home, about, person,work, baseURL, routes } from "@/resources";
+import { home, about, person, work, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
-import { Projects } from "@/components/work/Projects";
-import { Posts } from "@/components/blog/Posts";
+import Image from "next/image"; // Next.js ka Image component import karein
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -42,6 +41,7 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
+      
       <Column fillWidth horizontal="center" gap="m">
         <Column maxWidth="s" horizontal="center" align="center">
           {home.featured.display && (
@@ -101,50 +101,51 @@ export default function Home() {
         </Column>
       </Column>
 
-      
-      {/* <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx> */}
-      {/* {routes["/blog"] && (
-        <Column fillWidth gap="24" marginBottom="l">
-          <Row fillWidth paddingRight="64">
-            <Line maxWidth={48} />
-          </Row>
-          <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
-            <Row flex={1} paddingLeft="l" paddingTop="24">
-              <Heading as="h2" variant="display-strong-xs" wrap="balance">
-                Latest from the blog
-              </Heading>
-            </Row>
-            <Row flex={3} paddingX="20">
-              <Posts range={[1, 2]} columns="2" />
-            </Row>
-          </Row>
-          <Row fillWidth paddingLeft="64" horizontal="end">
-            <Line maxWidth={48} />
-          </Row>
+      {/* Pehli Image */}
+      <RevealFx translateY="16" delay={0.6}>
+        <Column fillWidth horizontal="center">
+          <Image
+            src="/images/first.png"
+            alt="First Image"
+            width={800}
+            height={400}
+            style={{ width: '100%', height: 'auto', maxWidth: '800px' }}
+          />
         </Column>
-      )} */}
-      <Projects range={[6]} />
+      </RevealFx>
 
-       <Button
-              id="work"
-              data-border="rounded"
-              href={work.path}
-              variant="secondary"
-              size="m"
-              weight="default"
-              arrowIcon
-            >
-              <Row gap="8" vertical="center" paddingRight="4">
-               
-               View All Projects
-              </Row>
-            </Button>
-            
-      <Mailchimp />
+      {/* Doosri Image */}
+      <RevealFx translateY="16" delay={0.8}>
+        <Column fillWidth horizontal="center">
+          <Image
+            src="/images/second.png"
+            alt="Second Image"
+            width={800}
+            height={400}
+            style={{ width: '100%', height: 'auto', maxWidth: '800px' }}
+          />
+        </Column>
+      </RevealFx>
+
+      {/* View All Projects Button */}
+      <RevealFx translateY="16" delay={1.0} horizontal="center">
+        <Button
+          id="work"
+          data-border="rounded"
+          href={work.path}
+          variant="secondary"
+          size="m"
+          weight="default"
+          arrowIcon
+        >
+          <Row gap="8" vertical="center" paddingRight="4">
+            View All Projects
+          </Row>
+        </Button>
+      </RevealFx>
+      
+      {/* Mailchimp component optional hai, agar chahiye to uncomment kar lena */}
+      {/* <Mailchimp /> */}
     </Column>
-
-    
   );
 }

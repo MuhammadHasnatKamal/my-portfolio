@@ -2,12 +2,12 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Noman",
-  lastName: "Ejaz",
-  name: `Noman Ejaz`,
-  role: "Software Engineer",
-  avatar: "/images/personal.jpg",
-  email: "nomanejaz8970@gmail.com",
+  firstName: "M Hasnat",
+  lastName: "Kamal",
+  name: `M Hasnat Kamal`,
+  role: "Software Engineer | Digital Marketing & Growth Strategist",
+  avatar: "/images/personal.png",
+  email: "muhammadhasnatkamal@gmail.com",
   location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -22,22 +22,22 @@ const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/noman-ejaz",
-    essential: true,
-  },
+  // {
+  //   name: "GitHub",
+  //   icon: "github",
+  //   link: "https://github.com/noman-ejaz",
+  //   essential: true,
+  // },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/noman-ejaz-7b4389195/",
+    link: "https://www.linkedin.com/in/muhammadhasnatkamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     essential: true,
   },
   {
     name: "Facebook",
     icon: "facebook",
-    link: "https://www.facebook.com/profile.php?id=61556052675351",
+    link: "https://www.facebook.com/share/1DBbTwfkq9/",
     essential: false,
   },
   {
@@ -54,7 +54,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Crafting products, automations, and real-world solutions</>,
+  headline: <>Helping Brands and Professionals to Grow  Through Content, Design, Engagement, and Paid ads.</>,
   featured: {
     display: true,
     title: (
@@ -62,15 +62,15 @@ const home: Home = {
         <strong className="ml-4">Contact: </strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          +92-318-3374121
+          +923170974113
         </Text>
       </Row>
     ),
-    href: "https://wa.me/923183374121",
+    href: "https://wa.me/923170974113",
   },
   subline: (
     <>
-    I'm Noman, a software engineer who enjoys creating meaningful tools— from web apps to AI-powered systems.
+    I’m Muhammad Hasnat Kamal, a software engineer and digital strategist who builds growth systems from  content and visuals to engagement strategies, paid ads, and AI-powered tools
 </>
   ),
 };
@@ -96,7 +96,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Noman is a Pakistan-based software engineer with a passion for turning complex technical challenges into clean, scalable solutions. His work spans web applications, backend systems, AI-powered tools, and modern automation technologies.
+        
+        Muhammad Hasnat Kamal is a Pakistan-based software engineer and digital strategist who helps brands and professionals grow online. He combines technical expertise with creative strategy to build scalable systems, engaging content, and high-converting campaigns
       </>
     ),
   },
@@ -105,33 +106,73 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Digi Inn Solutions",
+        company: "LinkedIn Growth & Personal Branding Manager",
         timeframe: "2023 - Present",
-        role: "Software Engineer",
+        role: "",
         achievements: [
           <>
-            Plan, design, develop, and deploy scalable web applications using Django, Django Rest Framework, Fast API, React.js, Bootstrap, Tailwind CSS, SQlite, PostgreSQL.
+         Managed and scaled multiple LinkedIn accounts for founders, creators, and professionals.
+Worked on profile optimization, content planning, posting systems, and engagement to increase visibility and inbound leads.
           </>,
           <>
-           Align and delegate tasks to team members, ensuring smooth collaboration and project efficiency.
+          Profile optimization and positioning
           </>,
-           <>
-           Develop and integrate RESTful APIs for seamless communication between frontend and backend. Optimize application performance, ensuring efficiency, security, and scalability.
+          <>
+          Content strategy and posting schedules
+          </>,
+          <>
+          Engagement and audience growth
+          </>,
+          <>
+          Improved profile views, impressions, and inbound messages
           </>,
         ],
        
       },
       {
-        company: "Al-Khidmat Razi Hospital",
-        timeframe: "2023 - 2023",
-        role: "Associate Software Engineer",
+        company: "Facebook Page Manager & Meta Ads",
+        timeframe: "2023 - Present",
+        role: "",
         achievements: [
           <>
-            Developed and deployed scalable web applications using Python, Django, Django Rest Framework, and FastAPI.
+          Managed multiple Facebook pages for brands and businesses.
+Handled content posting, audience engagement, inbox management, and basic ad coordination to improve reach and brand presence.
           </>,
           <>
-           Designed and integrated RESTful APIs for efficient communication between systems.
+          Facebook page setup and optimization
           </>,
+          <>
+          Content posting and scheduling
+          </>,
+          <>
+          Comment and inbox management
+          </>,
+          <>
+          Support in running Meta ad campaigns
+          </>,
+        ],
+       
+      },
+      {
+        company: "eCommerce Marketing & Brand Manager",
+        timeframe: "2023 - 2023",
+        role: "",
+        achievements: [
+          <>
+           Managed multiple eCommerce brands end to end.
+Handled store management, product listings, creatives, and paid ads to support growth and conversions.
+          </>,
+         
+          <>
+ Shopify store management
+  </>,
+  <> Product and landing page optimization</>,
+   <> Meta ads for sales and traffic</>,
+    <> Brand growth and performance tracking</>,
+
+
+
+         
         ],
         images: [],
       },
@@ -142,43 +183,40 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "Mohi Ud Din Islamic University",
-        description: <>Studied software engineering.</>,
+        name: "University Of Poonch Rawalakot AJk Pakistan",
+        description: <>
+Studied BSCS (Computer Science)   (2020-2024)</>,
       },
       
     ],
   },
  technical: {
   display: true,
-  title: "Technical Skills",
+  title: "Skills",
   skills: [
     {
-      title: "Backend Development",
+      title: "LinkedIn & Social Media Growth",
       tags: [
-        { name: "Python", icon: "python" },
-        { name: "Django", icon: "django" },
-        { name: "FastAPI", icon: "fastapi" },
-        { name: "Flask", icon: "flask" },
+        { name: "Strategy", icon: "Strategy" },
+        { name: "Content Creation", icon: "django" },
+        { name: "Engagement", icon: "fastapi" },
+        { name: "Lead Generation", icon: "flask" },
+        { name: "Profile Management", icon: "flask" },
+        { name: "LinkedIn Management", icon: "flask" },
+        { name: "Post Design", icon: "flask" },
+        { name: "Carosuels", icon: "flask" },
+        { name: "Cheetsheets Design", icon: "flask" },
+        { name: "Social Media Mangement", icon: "flask" },
       ],
     },
     {
-      title: "Frontend Development",
+      title: "Design & Campaign Management",
       tags: [
-        { name: "JavaScript", icon: "javascript" },
-        { name: "React", icon: "react" },
-        { name: "Next.js", icon: "nextjs" },
-        { name: "Bootstrap", icon: "bootstrap" },
-        { name: "Tailwind Css", icon: "tailwind css" },
-      ],
-    },
-    {
-      title: "Databases & DevOps",
-      tags: [
-        { name: "PostgreSQL", icon: "postgresql" },
-        { name: "MongoDB", icon: "mongodb" },
-        { name: "AWS", icon: "aws" },
-        { name: "Render", icon: "render" },
-        { name: "Docker", icon: "docker" },
+        { name: "Paid ad campaigns (LinkedIn, Meta , Insta ,Tiktok)", icon: "react" },
+        { name: "ECommerce Store Management", icon: "bootstrap" },
+        { name: "Increase Sales", icon: "tailwind css" },
+        { name: "Dropshipping Store Mangemnt", icon: "tailwind css" },
+        { name: "Shopify Store Creation", icon: "tailwind css" },
       ],
     },
   ],
@@ -206,7 +244,7 @@ const work: Work = {
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
+  label: "Pricing",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one
