@@ -15,7 +15,7 @@ export async function generateMetadata() {
 export default function Services() {
   return (
     <Flex 
-      maxWidth="xxl" 
+      // maxWidth="xxl" 
       paddingX={{ default: "l", m: "xl" }}
       horizontal="center"
       style={{ 
