@@ -14,15 +14,17 @@ export async function generateMetadata() {
 
 export default function Services() {
   return (
-    <Flex 
-      // maxWidth="xxl" 
-      paddingX={{ default: "l", m: "xl" }}
-      horizontal="center"
-      style={{ 
-        width: '100%',
-        justifyContent: 'center'
-      }}
-    >
+   <Flex 
+  horizontal="center"
+  style={{ 
+    width: '100%',
+    justifyContent: 'center',
+    padding: '0 1rem',
+    '@media (min-width: 768px)': {
+      padding: '0 2rem'
+    }
+  }}
+>
       <Schema
         as="webPage"
         baseURL={baseURL}
