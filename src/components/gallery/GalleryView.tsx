@@ -119,7 +119,7 @@ export default function ServicesView() {
         {services.map((service) => (
           <Card
             key={service.id}
-            background={service.popular ? "brand-weak" : "neutral-subtle"}
+            background={service.popular ? "surface" : "page"} {/* Changed to valid values */}
             padding="l"
             radius="l"
             border={service.popular ? "brand" : "neutral-subtle"}
@@ -127,7 +127,8 @@ export default function ServicesView() {
               height: '100%',
               display: 'flex',
               flexDirection: 'column',
-              position: 'relative'
+              position: 'relative',
+              backgroundColor: service.popular ? 'var(--color-brand-weak, #e0f2fe)' : 'var(--color-neutral-subtle, #f8fafc)' /* Fallback */
             }}
           >
             {service.popular && (
