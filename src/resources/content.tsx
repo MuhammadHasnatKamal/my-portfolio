@@ -57,15 +57,14 @@ const home: Home = {
   headline: <>Helping Brands and
    Professionals Grow
     Through Content,
-     Design, Engagement,
-      and Paid ads.</>,
+     Design, Engagement, and Paid ads.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Contact: </strong>{" "}
-        <Line background="brand-alpha-strong" vert height="18" />
-        <Text marginRight="3" onBackground="brand-medium">
+        <Line background="brand-alpha-strong" vert height="20" />
+        <Text marginRight="4" onBackground="brand-medium">
           +923170974113
         </Text>
       </Row>
