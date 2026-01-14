@@ -119,7 +119,7 @@ export default function ServicesView() {
         {services.map((service) => (
           <Card
             key={service.id}
-            background={service.popular ? "surface" : "page"} {/* Changed to valid values */}
+            background={service.popular ? "surface" : "surface-subtle"} {/* Changed "page" to valid value */}
             padding="l"
             radius="l"
             border={service.popular ? "brand" : "neutral-subtle"}
