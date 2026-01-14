@@ -117,32 +117,33 @@ export default function ServicesView() {
         width: '100%'
       }}>
         {services.map((service) => (
-          <Card
+ <Card
   key={service.id}
-  background={service.popular ? "surface" : "surface-subtle"}
+  background={service.popular ? "surface" : "page"}
   padding="l"
   radius="l"
-  border={service.popular ? "brand" : "neutral-subtle"}
   style={{
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    backgroundColor: service.popular ? 'var(--color-brand-weak, #e0f2fe)' : 'var(--color-neutral-subtle, #f8fafc)'
+    border: service.popular 
+      ? '2px solid var(--color-brand)' 
+      : '1px solid var(--color-neutral-subtle)'
   }}
 >
             {service.popular && (
-              <Badge
-                background="brand"
-                onBackground="neutral-inverted"
-                style={{
-                  position: 'absolute',
-                  top: '-12px',
-                  right: '24px'
-                }}
-              >
-                Most Popular
-              </Badge>
+             <Badge
+  style={{
+    position: 'absolute',
+    top: '-12px',
+    right: '24px',
+    backgroundColor: 'var(--color-brand)',
+    color: 'var(--color-neutral-inverted)'
+  }}
+>
+  Most Popular
+</Badge>
             )}
             
             <Column gap="m" flex={1}>
@@ -157,14 +158,24 @@ export default function ServicesView() {
                 )}
               </Column>
               
-              <Row gap="xs" vertical="baseline">
-                <Heading variant="display-strong-xl">
-                  {service.price}
-                </Heading>
-                <Text variant="body-default-m" onBackground="neutral-weak">
-                  / {service.type}
-                </Text>
-              </Row>
+              <Row 
+  gap="xs" 
+  style={{
+    alignItems: 'baseline'
+  }}
+>
+  <Heading variant="display-strong-xl">
+    {service.price}
+  </Heading>
+  <Text 
+    variant="body-default-m" 
+    style={{
+      color: 'var(--color-neutral-weak)'
+    }}
+  >
+    / {service.type}
+  </Text>
+</Row>
               
               <Column gap="s" paddingTop="m" paddingBottom="l">
                 <Text variant="body-default-m" weight="strong">
