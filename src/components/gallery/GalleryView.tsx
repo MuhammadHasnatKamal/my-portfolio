@@ -118,19 +118,19 @@ export default function ServicesView() {
       }}>
         {services.map((service) => (
           <Card
-            key={service.id}
-            background={service.popular ? "surface" : "surface-subtle"} {/* Changed "page" to valid value */}
-            padding="l"
-            radius="l"
-            border={service.popular ? "brand" : "neutral-subtle"}
-            style={{
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              position: 'relative',
-              backgroundColor: service.popular ? 'var(--color-brand-weak, #e0f2fe)' : 'var(--color-neutral-subtle, #f8fafc)' /* Fallback */
-            }}
-          >
+  key={service.id}
+  background={service.popular ? "surface" : "surface-subtle"}
+  padding="l"
+  radius="l"
+  border={service.popular ? "brand" : "neutral-subtle"}
+  style={{
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
+    backgroundColor: service.popular ? 'var(--color-brand-weak, #e0f2fe)' : 'var(--color-neutral-subtle, #f8fafc)'
+  }}
+>
             {service.popular && (
               <Badge
                 background="brand"
