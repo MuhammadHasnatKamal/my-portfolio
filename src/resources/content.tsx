@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "M Hasnat",
   lastName: "Kamal",
   name: `M Hasnat Kamal`,
-  role: "Software Engineer | Digital Marketing & Growth Strategist",
+  role: "Software Engineer | Branding and Marketing Expert",
   avatar: "/images/personal.png",
   email: "muhammadhasnatkamal@gmail.com",
   location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -54,14 +54,18 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Helping Brands and Professionals to Grow  Through Content, Design, Engagement, and Paid ads.</>,
+  headline: <>Helping Brands and
+   Professionals Grow
+    Through Content,
+     Design, Engagement,
+      and Paid ads.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Contact: </strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
+        <Line background="brand-alpha-strong" vert height="18" />
+        <Text marginRight="3" onBackground="brand-medium">
           +923170974113
         </Text>
       </Row>
@@ -70,7 +74,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I’m Muhammad Hasnat Kamal, a software engineer and digital strategist who builds growth systems from  content and visuals to engagement strategies, paid ads, and AI-powered tools
+    Your Personal or Professional Brand Growth Partner
 </>
   ),
 };
@@ -97,7 +101,7 @@ const about: About = {
     description: (
       <>
         
-        Muhammad Hasnat Kamal is a Pakistan-based software engineer and digital strategist who helps brands and professionals grow online. He combines technical expertise with creative strategy to build scalable systems, engaging content, and high-converting campaigns
+        I’m Muhammad Hasnat Kamal, a software engineer by education and a branding and marketing professional by passion who helps personal and professional brands stand out through clear positioning, strong visuals, meaningful content, and result driven marketing strategies.
       </>
     ),
   },
@@ -106,12 +110,12 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "LinkedIn Growth & Personal Branding Manager",
+        company: "LinkedIn Growth & Personal Branding",
         timeframe: "2023 - Present",
         role: "",
         achievements: [
           <>
-         Managed and scaled multiple LinkedIn accounts for founders, creators, and professionals.
+         Managed and scaled 70+ LinkedIn accounts for founders, creators, and professionals.
 Worked on profile optimization, content planning, posting systems, and engagement to increase visibility and inbound leads.
           </>,
           <>
@@ -131,7 +135,7 @@ Worked on profile optimization, content planning, posting systems, and engagemen
       },
       {
         company: "Facebook Page Manager & Meta Ads",
-        timeframe: "2023 - Present",
+        timeframe: "2021 - Present",
         role: "",
         achievements: [
           <>
@@ -153,29 +157,29 @@ Handled content posting, audience engagement, inbox management, and basic ad coo
         ],
        
       },
-      {
-        company: "eCommerce Marketing & Brand Manager",
-        timeframe: "2023 - 2023",
-        role: "",
-        achievements: [
-          <>
-           Managed multiple eCommerce brands end to end.
-Handled store management, product listings, creatives, and paid ads to support growth and conversions.
-          </>,
+     // {
+        //company: "eCommerce Marketing & Brand Manager",
+        //timeframe: "2023 - 2023",
+        //role: "",
+       // achievements: [
+         // <>
+          // Managed multiple eCommerce brands end to end.
+//Handled store management, product listings, creatives, and paid ads to support growth and conversions.
+        //  </>,
          
-          <>
- Shopify store management
-  </>,
-  <> Product and landing page optimization</>,
-   <> Meta ads for sales and traffic</>,
-    <> Brand growth and performance tracking</>,
+         // <>
+ //Shopify store management
+ // </>,
+ // <> Product and landing page optimization</>,
+  // <> Meta ads for sales and traffic</>,
+   // <> Brand growth and performance tracking</>,
 
 
 
          
-        ],
-        images: [],
-      },
+      //  ],
+      //  images: [],
+    //  },
     ],
   },
   studies: {
@@ -185,7 +189,7 @@ Handled store management, product listings, creatives, and paid ads to support g
       {
         name: "University Of Poonch Rawalakot AJk Pakistan",
         description: <>
-Studied BSCS (Computer Science)   (2020-2024)</>,
+Studied BS Computer Science  (2020-2024)</>,
       },
       
     ],
@@ -197,28 +201,29 @@ Studied BSCS (Computer Science)   (2020-2024)</>,
     {
       title: "LinkedIn & Social Media Growth",
       tags: [
+        { name: "LinkedIn Management", icon: "flask" },
+        { name: "Post Design", icon: "flask" },
+        { name: "Carosuels Design", icon: "flask" },
+        { name: "Cheetsheets Design", icon: "flask" },
         { name: "Strategy", icon: "Strategy" },
         { name: "Content Creation", icon: "django" },
         { name: "Engagement", icon: "fastapi" },
         { name: "Lead Generation", icon: "flask" },
+        { name: "Meta Ads", icon: "flask" },
         { name: "Profile Management", icon: "flask" },
-        { name: "LinkedIn Management", icon: "flask" },
-        { name: "Post Design", icon: "flask" },
-        { name: "Carosuels", icon: "flask" },
-        { name: "Cheetsheets Design", icon: "flask" },
         { name: "Social Media Mangement", icon: "flask" },
       ],
     },
-    {
-      title: "Design & Campaign Management",
-      tags: [
-        { name: "Paid ad campaigns (LinkedIn, Meta , Insta ,Tiktok)", icon: "react" },
-        { name: "ECommerce Store Management", icon: "bootstrap" },
-        { name: "Increase Sales", icon: "tailwind css" },
-        { name: "Dropshipping Store Mangemnt", icon: "tailwind css" },
-        { name: "Shopify Store Creation", icon: "tailwind css" },
-      ],
-    },
+   // {
+     // title: "Design & Campaign Management",
+    //  tags: [
+      //  { name: "Paid ad campaigns", icon: "react" },
+      //  { name: "ECommerce Store Management", icon: "bootstrap" },
+      //  { name: "Increase Sales", icon: "tailwind css" },
+      //  { name: "Dropshipping Store Mangemnt", icon: "tailwind css" },
+      //  { name: "Shopify Store Creation", icon: "tailwind css" },
+     // ],
+   // },
   ],
 },
 
